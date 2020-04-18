@@ -8,3 +8,64 @@ body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(0.25turn, #d9cfcc, #b1b1b5, #576c78);
 }
+
+#fullpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    background-image: url("./img/banner.jpg");
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    cursor: pointer;
+    width: 10vw;
+    top: 15px;
+    margin: 0 0 0 .75em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    right: 40px;
+    list-style: none;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.navbar a {
+    display: block;
+    font-size: 1.2em;
+    color: #168E80;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    letter-spacing: .45rem;
+    transition: all 0.4s ease 0s;
+}
+
+.navbar a:hover {
+    color: #0C4F69;
+    border-bottom: 2px solid #0C4F69;
+}
+
+.home h1 {
+    font-size: 3vw;
+    color: #168E80;
+    position: relative;
+    margin-left: 2%;
+}
+
+.home h3 {
+    font-size: 2vw;
+    height: 25%;
+    margin-left: 5%;
+}
