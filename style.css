@@ -35,8 +35,8 @@ body {
     flex-wrap: nowrap;
     position: absolute;
     top: 90px;
-    margin: 0 auto;
     right: 40px;
+    margin: 0 auto;
     list-style: none;
     text-transform: uppercase;
     z-index: 999;
@@ -50,6 +50,7 @@ body {
     text-decoration: none;
     letter-spacing: .45rem;
     transition: all 0.4s ease 0s;
+    font-weight: 700;
 }
 
 .navbar a:hover {
@@ -62,10 +63,40 @@ body {
     color: #168E80;
     position: relative;
     margin-left: 2%;
+    opacity: 0;
+    transition: all 1.5s ease 0s;
 }
 
 .home h3 {
     font-size: 2vw;
     height: 25%;
     margin-left: 5%;
+    line-height: 2em;
+    opacity: 0;
+    transition: all 1s ease 0s;
+    transition-delay: 0.5s;
+}
+
+.home:hover h1,
+.home:hover h3 {
+    opacity: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/strip.png);
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 20vw;
+    height: 15vh;
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
