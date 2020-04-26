@@ -190,7 +190,7 @@ body {
     opacity: 1;
 }
 
-.offer .container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,7 +232,8 @@ body {
     transition-delay: 1s;
 }
 
-.offer-text h2 {
+.offer-text h2,
+.projects-text h2 {
     color: white;
     font-size: 1.8em;
     margin: .5em auto;
@@ -319,4 +320,54 @@ body {
         margin: .7em 0;
     }
 
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.gallery img {
+    width: 30%;
+    border: 2px solid white;
+    margin: 1em 0;
+    opacity: 0.7;
+    transition: all .4s ease;
+}
+
+.gallery img:hover {
+    border: 4px solid white;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+
+    .gallery img {
+        width: 45%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .projects-text h2 {
+        font-size: 1.3em;
+        line-height: .5em;
+        margin: .5em auto;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 60%;
+        height: 12vh;
+    }
 }
