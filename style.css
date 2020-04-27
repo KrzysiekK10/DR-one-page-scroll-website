@@ -325,15 +325,15 @@ body {
 .gallery {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
 .gallery img {
-    width: 30%;
+    width: 25vw;
     border: 2px solid white;
-    margin: 1em 0;
+    margin: 1em;
     opacity: 0.7;
     transition: all .4s ease;
 }
@@ -346,7 +346,7 @@ body {
 @media (max-width: 992px) {
 
     .gallery img {
-        width: 45%;
+        width: 35vw;
         height: 25vh;
     }
 }
@@ -354,9 +354,7 @@ body {
 @media (max-width: 576px) {
 
     .projects-text h2 {
-        font-size: 1.3em;
-        line-height: .5em;
-        margin: .5em auto;
+        display: none;
     }
 
     .gallery {
@@ -367,7 +365,7 @@ body {
     }
 
     .gallery img {
-        width: 60%;
+        width: 50vw;
         height: 12vh;
     }
 }
