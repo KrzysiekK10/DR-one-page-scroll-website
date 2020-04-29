@@ -3,4 +3,5 @@ new fullpage("#fullpage", {
     navigation: true,
     fadingEffect: true,
     fadingEffect: 'slides',
+    scrollingSpeed: 500,
 });
