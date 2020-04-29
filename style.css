@@ -64,8 +64,8 @@ body {
     position: relative;
     margin-left: 2%;
     opacity: 0;
-    transition: all .5s ease 0s;
-    transition-delay: 1s;
+    transition: all 1s ease 0s;
+    transition-delay: .5s;
 }
 
 .home h3 {
@@ -74,13 +74,25 @@ body {
     margin-left: 5%;
     line-height: 2em;
     opacity: 0;
-    transition: all 1s ease 0s;
-    transition-delay: 2s;
+    transition: all .7s ease 0s;
+    transition-delay: 1.5s;
 }
 
 .fp-viewing-0 h1,
 .fp-viewing-0 h3 {
     opacity: 1;
+}
+
+@media (max-width: 992px) {
+
+    .home h1 {
+        font-size: 5vw;
+    }
+
+    .home h3 {
+        font-size: 3.5vw;
+    }
+
 }
 
 .title {
@@ -328,6 +340,9 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    filter: blur(20px);
+    transition-duration: .2s;
+    transition-delay: .2s;
 }
 
 .gallery img {
@@ -343,12 +358,17 @@ body {
     opacity: 1;
 }
 
+.fp-viewing-3 .gallery {
+    filter: blur(0px);
+}
+
 @media (max-width: 992px) {
 
     .gallery img {
         width: 35vw;
         height: 25vh;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -368,4 +388,182 @@ body {
         width: 50vw;
         height: 12vh;
     }
+
+}
+
+.contact {
+    background-image: url(./img/contact.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-container {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    margin: 2em;
+}
+
+.contact-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 7em;
+}
+
+.contact-list-item {
+    line-height: 4em;
+    color: #168E80;
+    text-align: center;
+    opacity: 0;
+    transition-delay: .5s;
+}
+
+.contact-list-item .fa {
+    font-weight: 600;
+}
+
+.contact-text {
+    font-family: Roboto, sans-serif;
+    font-size: .9em;
+    letter-spacing: -20em;
+    color: #fff;
+    margin-left: 1em;
+    transition: all .4s ease;
+    transition-delay: .2s;
+}
+
+.contact-text a {
+    color: inherit;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.social-media {
+    position: relative;
+    font-size: 0em;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: .7s;
+}
+
+.social-media li a {
+    color: #fff;
+}
+
+.social-media li {
+    position: relative;
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media li:hover {
+    background-color: #fff;
+}
+
+.social-media li:hover a {
+    color: #168E80;
+}
+
+.copyright {
+    font-size: 0em;
+    margin-top: .5em;
+    color: #fff;
+    letter-spacing: .2em;
+    text-align: center;
+    transform: rotate(10deg);
+    opacity: 0;
+    background-color: rgba(22, 142, 128, 0);
+    transition-duration: .4s;
+    transition-delay: 1.7s;
+}
+
+.fp-viewing-4 .contact-list-item,
+.fp-viewing-4 .social-media,
+.fp-viewing-4 .copyright {
+    opacity: 1;
+}
+
+.fp-viewing-4 .contact-text {
+    letter-spacing: .1em;
+}
+
+.fp-viewing-4 .social-media {
+    font-size: 2em;
+}
+
+.fp-viewing-4 .copyright {
+    font-size: .9em;
+    background-color: #168E80;
+    transform: rotate(0deg);
+}
+
+@media (max-width: 992px) {
+
+    .contact-container {
+        width: 80%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .contact-list {
+        margin-bottom: 5em;
+    }
+
+    .contact-text {
+        font-size: .8em;
+    }
+
+    .social-media {
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 786px) {
+
+    .contact-text {
+        font-size: .7em;
+    }
+
+    .social-media {
+        font-size: 1.6em;
+    }
+
+    .copyright {
+        font-size: .8em;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .contact-text {
+        font-size: .6em;
+    }
+
+    .social-media {
+        font-size: 1.4em;
+    }
+
+    .copyright {
+        font-size: .7em;
+    }
+
 }
