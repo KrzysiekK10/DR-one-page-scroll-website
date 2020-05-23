@@ -1,6 +1,6 @@
 # DR-scroll-website   <img src ="img/logo.png" width="50px" height="50px">
 
-<img src="img/banner.jpg" width="100%" height="100%">
+<img src="img/screenshot.jpg" width="100%" height="100%">
 
 ## Opis
 Strona inspirowana i oparta na fullpage.js wykonana w ramach ćwiczeń i służąca tylko do celów prywatnych. W projekcie w głównej mierze bawiłem się animacjami tekstów oraz grafiką, dodatkowo do galerii zdjęć wykorzystałem bibliotekę lightbox.
